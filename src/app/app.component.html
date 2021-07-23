@@ -1,4 +1,4 @@
-<p-table #dt [value]="groupDataListChunkArr" [(selection)]="selectedCustomers" dataKey="id"
+<p-table #dt [value]="groupDataListChunkArr" dataKey="id"
     styleClass="p-datatable-customers" [rowHover]="true" [rows]="10" [showCurrentPageReport]="true"
     [rowsPerPageOptions]="[10,25,50]" [loading]="loading" [paginator]="true"
     currentPageReportTemplate="Showing {currentPage}  -  {totalPages}  of  {{groupDataList.length}} records"
