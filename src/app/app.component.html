@@ -1,0 +1,21 @@
+<p-table [value]="groupDataListChunkArr">
+    <ng-template pTemplate="header">
+        <tr>
+            <th colspan="5"></th>
+        </tr>
+    </ng-template>
+
+    <ng-template pTemplate="body" let-rowData let-rowIndex="rowIndex">
+        <tr>
+            <ng-container *ngFor="let data of rowData;">
+                <td>{{ data.groupName }}</td>
+            </ng-container>
+
+            <ng-container *ngIf="groupDataListChunkArr.length - 1 === rowIndex">
+                <ng-container *ngFor="let td of autoGenerateTd(groupDataListChunkArr[groupDataListChunkArr.length -1])">
+                    <td></td>
+                </ng-container>
+            </ng-container>
+        </tr>
+    </ng-template>
+</p-table>
