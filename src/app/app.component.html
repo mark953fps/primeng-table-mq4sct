@@ -1,8 +1,6 @@
-<p-table #dt [value]="groupDataListChunkArr" dataKey="id"
-    styleClass="p-datatable-customers" [rowHover]="true" [rows]="10" [showCurrentPageReport]="true"
-    [rowsPerPageOptions]="[10,25,50]" [loading]="loading" [paginator]="true"
-    currentPageReportTemplate="Showing {currentPage}  -  {totalPages}  of  {{groupDataList.length}} records"
-    [filterDelay]="0" styleClass="paginator-style">
+<p-table #dt [value]="groupDataListChunkArr" dataKey="id" styleClass="p-datatable-customers" [rowHover]="true"
+    [rows]="10" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]" [paginator]="true"
+    currentPageReportTemplate="Showing {currentPage}  -  {totalPages}  of  {{groupDataList.length}} records">
     <ng-template pTemplate="header">
         <tr>
             <th colspan="5"></th>
