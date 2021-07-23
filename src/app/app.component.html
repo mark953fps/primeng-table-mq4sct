@@ -2,7 +2,7 @@
     styleClass="p-datatable-customers" [rowHover]="true" [rows]="10" [showCurrentPageReport]="true"
     [rowsPerPageOptions]="[10,25,50]" [loading]="loading" [paginator]="true"
     currentPageReportTemplate="Showing {currentPage}  -  {totalPages}  of  {{groupDataList.length}} records"
-    [filterDelay]="0">
+    [filterDelay]="0" styleClass="paginator-style">
     <ng-template pTemplate="header">
         <tr>
             <th colspan="5"></th>
@@ -23,3 +23,5 @@
         </tr>
     </ng-template>
 </p-table>
+
+<!-- <pre>{{ dt.value | json }}</pre> -->
