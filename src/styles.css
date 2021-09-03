@@ -7,3 +7,7 @@
 .flex-column {
   flex-direction: column !important;
 }
+
+#custom-table-style div.ui-table-scrollable-body {
+  height: 500px !important;
+}
